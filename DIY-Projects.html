@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ahmad-ch</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="CSS/image/A2-gold-transparent.png"
+    />
+    <link rel="stylesheet" href="CSS/CSS file/DIY-Projects.css" />
+  </head>
+  <header class="research-header">
+    <div class="Atitle">
+      <a href="My-website.html">
+        <img class="pagetitle" src="CSS/image/A2-gold-transparent.png" />
+        <h1>ahmad-ch</h1>
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+        <p class="portfolio">DIY-Projects</p>
+      </a>
+    </div>
+    <nav class="dropdown">
+      <div class="right-side-nav">
+        <div class="popup">Menu</div>
+        <div class="triangle-div">
+          <span class="triangle"><!-- --></span>
+        </div>
+        <div class="img-div">
+          <img class="dropbtn" src="CSS/image/vector-gears.png" />
+        </div>
+      </div>
+      <div class="dropdown-content">
+        <a href="My-website.html">cover page</a>
+        <div class="dropdown2">
+          <button class="dropbtn2">
+            projects<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2">
+            <a href="researche-page.html">Researches</a>
+            <a href="CAD-page.html">CAD</a>
+            <a href="DIY-Projects.html">DIY Projects</a>
+          </div>
+        </div>
+        <a href="About_me.html">About me</a>
+        <a href="#">Resume</a>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <!-- Slideshow container1 -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="CSS/image/Heart-box.jpg" style="width: 100%;" />
+        <div class="text">Heart Shaped Box</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="CSS/image/Heart-box2.jpg" style="width: 100%;" />
+        <div class="text">Heart Shaped Box</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <!-- Slideshow container2 -->
+  </body>
+</html>
