@@ -268,10 +268,10 @@ h1 {
 } */
 
 .dropdown-content .aa:hover {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
+  border-bottom: 1px solid rgba(251, 153, 25);
+  box-shadow: 0px 0px 5px 0px rgba(251, 153, 25) inset;
   padding-bottom: -1px;
-  box-shadow: aliceblue;
+  box-shadow: rgba(251, 153, 25);
 }
 
 .dropdown:hover .dropbtn {
@@ -310,10 +310,10 @@ h1 {
   display: block;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
+  border-bottom: 1px solid rgba(251, 153, 25);
+  box-shadow: 0px 0px 5px 0px rgba(251, 153, 25) inset;
   padding-bottom: -1px;
-  box-shadow: aliceblue;
+  box-shadow: rgba(251, 153, 25);
 }
 .dropdown-content2 {
   float: right;
@@ -344,7 +344,7 @@ h1 {
   border-bottom: 1px solid white;
 }
 .dropdown-content2 .aa:hover {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(251, 153, 25);
 }
 @media (min-width: 764px) {
   .dropdown-content .aa {
@@ -425,11 +425,6 @@ body {
   .col8 {
     flex: 0 0 60.666667%;
   }
-}
-*,
-::after,
-::before {
-  box-sizing: inherit;
 }
 .ss2 {
   margin-top: 3rem;
@@ -512,7 +507,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   flex: 1 1 auto;
-  padding: 4rem 0rem;
+  padding-top: 4.5rem;
 }
 .date1 {
   line-height: 1.61em;
@@ -536,7 +531,7 @@ body {
 }
 .boxright {
   position: relative;
-  width: 50%;
+  width: 75.39%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
