@@ -140,15 +140,8 @@ table {
   box-sizing: border-box;
 }
 
-#h2-2 {
-  display: block;
-  margin-left: 0px;
-}
-
-body {
-  background-color: #983f3fb4;
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
+  padding-top: 30px;
 }
 
 .popup {
@@ -182,7 +175,7 @@ body {
 h1 {
   position: relative;
   top: 34px;
-  color: white;
+  color: rgb(64, 63, 63);
 }
 .Atitle {
   top: 1px;
@@ -208,16 +201,16 @@ h1 {
   position: relative;
 }
 .portfolio {
-  font-size: 4rem;
+  font-size: 5rem;
   position: relative;
   top: -224px;
   left: 92px;
-  color: white;
+  color: rgb(64, 63, 63);
 }
-a {
+.aa {
   text-decoration: none;
 }
-.Atitle a {
+.Atitle .aa {
   width: 323px;
   height: 132px;
   position: relative;
@@ -231,20 +224,6 @@ a {
   position: relative;
 }
 
-.research-header {
-  height: 26vh;
-  display: block;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-#img-3 {
-  width: 33%;
-  margin-right: 6rem;
-  margin-top: 0rem;
-  margin-bottom: 2rem;
-}
-
 .img-div {
   display: flex;
   justify-content: center;
@@ -254,7 +233,7 @@ a {
 
 .dropdown {
   cursor: pointer;
-  margin-right: 4rem;
+  margin-right: 6rem;
   float: right;
 }
 
@@ -272,7 +251,7 @@ a {
   margin-top: 4.5rem;
 }
 
-.dropdown-content a {
+.dropdown-content .aa {
   color: white;
   padding: 6px 28px;
   text-decoration: none;
@@ -287,11 +266,11 @@ a {
   display: none;
 } */
 
-.dropdown-content a:hover {
-  border-bottom: 1px solid rgb(106, 255, 160);
-  box-shadow: 0px 0px 5px 0px rgb(106, 255, 160) inset;
+.dropdown-content .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
   padding-bottom: -1px;
-  box-shadow: rgb(106, 255, 160);
+  box-shadow: rgb(46, 202, 116);
 }
 
 .dropdown:hover .dropbtn {
@@ -330,10 +309,10 @@ a {
   display: block;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid rgb(106, 255, 160);
-  box-shadow: 0px 0px 5px 0px rgb(106, 255, 160) inset;
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
   padding-bottom: -1px;
-  box-shadow: rgb(106, 255, 160);
+  box-shadow: rgb(46, 202, 116);
 }
 .dropdown-content2 {
   float: right;
@@ -347,7 +326,7 @@ a {
   display: none;
   text-align: center;
 }
-.dropdown-content2 a {
+.dropdown-content2 .aa {
   padding: 5px 5px !important;
   color: white;
   text-decoration: none;
@@ -360,17 +339,37 @@ a {
 .dropbtn2:hover .dropdown-content2 {
   display: block;
 }
-.dropdown-content2:a {
-  border-bottom: 1px solid rgb(106, 255, 160);
+.dropdown-content2: .aa {
+  border-bottom: 1px solid white;
 }
-.dropdown-content2 a:hover {
-  border-bottom: 1px solid rgb(106, 255, 160);
+.dropdown-content2 .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
+}
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dropdown-content .aa {
+    padding: 6px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-content .aa {
+    padding: 6px 32px;
+  }
 }
 .sec1 {
-  height: 95vh;
-}
-.aboutme1 {
-  margin-top: 7rem;
+  margin-top: 16rem;
 }
 .pp {
   margin: 2rem;
@@ -379,13 +378,10 @@ a {
   margin-top: -2rem;
 }
 .me {
-  margin-left: 40%;
-  margin-top: -27%;
   width: 55%;
+  margin-left: 5rem;
   background-color: white;
   padding: 0.8rem;
-  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0.8rem;
   overflow: hidden;
   position: relative;
@@ -414,8 +410,8 @@ a {
   margin-top: 2rem;
 }
 .sec2 {
-  height: 100vh;
-  background-color: whitesmoke;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 .expertise {
   text-transform: uppercase !important;
@@ -425,7 +421,7 @@ a {
   font-weight: 700;
   text-align: center !important;
   color: rgb(64, 63, 63);
-  font-size: 36px;
+  font-size: 30px;
 }
 .te {
   padding-top: 4rem;
@@ -433,29 +429,27 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 .text-center {
   text-align: center !important;
 }
 .clmn {
-  flex: 0 0 33.3333333333%;
-  max-width: 33.3333333333%;
+  flex: 0 0 33.333333%;
   position: relative;
-  width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 1.75rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
 }
 .text1 {
   color: #6c757d !important;
   line-height: 1.4;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 400;
 }
 .my-3 {
   margin-bottom: 1rem !important;
   margin-top: 1rem !important;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -463,17 +457,17 @@ a {
   line-height: 1.2;
 }
 .img2 {
-  width: 20rem;
+  width: 16rem;
 }
 .img1 {
-  width: 15rem;
-  background-color: rgb(243, 243, 34);
+  width: 12rem;
+  background-color: rgb(19, 29, 142);
   padding: 1rem;
   border-radius: 2rem;
 }
 .img3 {
-  width: 15rem;
-  background-color: rgb(243, 243, 34);
+  width: 12rem;
+  background-color: rgb(19, 29, 142);
   padding: 1rem;
   border-radius: 2rem;
 }
