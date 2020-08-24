@@ -2,19 +2,87 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,22 +91,35 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
@@ -55,37 +136,32 @@ table {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-left: 30px;
-    padding-top: 30px;
+header {
+  padding-top: 30px;
+  height: 30vh;
 }
+
 .popup {
-  width: 85px;
   background-color: #555;
   color: #fff;
   text-align: center;
-  position: relative;
-  float: right;
-  height: 24px;
   border-radius: 6px;
-  margin-top: -116px;
-  margin-right: 6px;
-  padding-top: 4px;
+  padding: 0.5rem 1.5rem;
 }
 
+.triangle-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
-.traingle {
+.triangle {
   content: "";
-  position: relative;
-  top: -70px;
-  margin-left: -45px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
@@ -94,21 +170,18 @@ body {
 
 .pagetitle {
   width: 66px;
-    top: 38px;
-    position: relative;
+  top: 38px;
+  position: relative;
 }
-h1{
+h1 {
   position: relative;
   top: 34px;
-  color: white;
+  color: rgb(64, 63, 63);
 }
 .Atitle {
-  top: -25px;
-    position: relative;
-    left: 58px;
-    width: 22%;
-    height: 133px;
-    float: left;
+  top: 1px;
+  margin-left: 3rem;
+  float: left;
 }
 .rectangle1 {
   height: 88px;
@@ -129,89 +202,103 @@ h1{
   position: relative;
 }
 .portfolio {
-  font-size: 50px;
+  font-size: 4rem;
   position: relative;
-    top: -211px;
-    left: 92px;
-    color: white;
+  top: -224px;
+  left: 92px;
+  color: rgb(64, 63, 63);
 }
-a {
+.aa {
   text-decoration: none;
 }
-.Atitle a {
-  width: 850px;
+.Atitle .aa {
+  width: 468px;
   height: 132px;
   position: relative;
   float: left;
 }
-.dropbtn{
+.dropbtn {
   padding: 0px;
   margin: 0px;
-    Width: 80px;
-    z-index: 1;
-    position: relative;
-  }
+  width: 6rem;
+  z-index: 1;
+  position: relative;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 .dropdown {
-  width: 6%;
-  height: 81px;
   cursor: pointer;
-  margin-top: 22px;
-  margin-right: 100px;
+  margin-right: 6rem;
+  float: right;
+}
+
+.right-side-nav {
   float: right;
 }
 
 .dropdown-content {
   display: none;
-  float: right;
-  position: relative;
+  float: left;
   text-align: center;
   background-color: black;
   opacity: 0.8;
-  right: 92px;
-  top: 9px;
-  width: 526px;
+  margin-right: 0.5rem;
+  margin-top: 4.5rem;
 }
 
-.dropdown-content a {
+.dropdown-content .aa {
   color: white;
-  padding: 6px 36px;
-  margin-right: -1px;
+  padding: 6px 28px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
 }
-.dropdown:hover .popup {display: none;
+/*
+.dropdown:hover .popup {
+  display: none;
 }
-.dropdown:hover .traingle {display: none;}
-.dropdown-content a:hover {border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
-padding-bottom: 8px;
-box-shadow: aliceblue;
+.dropdown:hover .traingle {
+  display: none;
+} */
+
+.dropdown-content .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
+  padding-bottom: -1px;
+  box-shadow: rgb(46, 202, 116);
 }
-.dropdown:hover .dropbtn {opacity: 1;
+
+.dropdown:hover .dropbtn {
+  opacity: 1;
   -webkit-animation: rotation 4s infinite linear;
 }
 @-webkit-keyframes rotation {
-		from {
-				-webkit-transform: rotate(0deg);
-		}
-		to {
-				-webkit-transform: rotate(359deg);
-		}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }
-.dropdown:hover .dropdown-content {display: inline-block;
-  margin-left: 120px;
-margin-top: -70px;
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
+
 .dropdown2 {
-    display: inline-block;
+  display: inline-block;
 }
 .dropbtn2 {
   width: 115px;
-    cursor: pointer;
-    padding: 7px 16px;
-    display: block;
+  cursor: pointer;
+  padding: 7px 16px;
+  display: block;
 }
 .dropdown2 .dropbtn2 {
   color: white;
@@ -223,10 +310,10 @@ margin-top: -70px;
   display: block;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
-padding-bottom: -1px;
-box-shadow: aliceblue;
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
+  padding-bottom: -1px;
+  box-shadow: rgb(46, 202, 116);
 }
 .dropdown-content2 {
   float: right;
@@ -238,15 +325,14 @@ box-shadow: aliceblue;
   top: 0px;
   width: 110px;
   display: none;
+  text-align: center;
 }
-.dropdown-content2 a {
+.dropdown-content2 .aa {
+  padding: 5px 5px !important;
   color: white;
-  padding: 7px 4px;
-  margin-right: -1px;
   text-decoration: none;
   text-align: center;
   display: block;
-  width: 111px;
 }
 .dropdown2:hover .dropdown-content2 {
   display: block;
@@ -254,103 +340,94 @@ box-shadow: aliceblue;
 .dropbtn2:hover .dropdown-content2 {
   display: block;
 }
-.dropdown-content2:a {
-  border-bottom: 1px solid white;
+.dropdown-content2 .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
 }
-.dropdown-content2 a:hover {
-  border-bottom: 1px solid white;
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
 }
-.headerbackground {
-  Background-color: grey;
-  opacity: 1;
+
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dropdown-content .aa {
+    padding: 6px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-content .aa {
+    padding: 6px 32px;
+  }
+}
+
+.sec1 {
+  display: flex;
   width: 100%;
-  z-index: -1;
-  height: 198px;
-  position: absolute;
-  margin-left: -30px;
-  margin-right: 10px;
-  margin-top: -30px;
-  box-shadow: 0px -3px 10px -2px black inset;
+  height: 62vh;
 }
-.menurectangle {
-  position: relative;
-  background-color: white;
-  width: 17%;
-  height: 517px;
-  margin-left: -360px;
-  margin-top: 206.5px;
-  float: left;
-  border-right: 1px solid black;
+.cadmenu {
+  width: 235px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  border-right: 2px solid black;
 }
-.CADmenu {
-  Position: relative;
-  line-height: 35px;
-  margin-top: 245px;
-  height: 100%;
+
+.cadmenu a {
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 9px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
 }
-.CADmenu a {
-  Position: relative;
-  display: block;
-  color: black;
-  width: 210px;
+
+.cadmenu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
 }
-h3, h2 {
-  font-size: 18px;
-  color: #375b8a;
+
+.cadmenu a:active {
+  background-color: #4caf50; /* Add a green color to the "active/current" link */
+  color: white;
 }
-h3 {
-  margin-top: 15px;
+.cadmenu-title {
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 17px;
+  font-weight: 600;
+  color: #143d60;
 }
-.CADmenu a:hover {
-  border-bottom: 0.5px solid black;
+.cadmenu-title-image {
+  width: 4rem;
+  margin-right: 0.5rem;
 }
-.navdic {
-  width: 50px;
-    float: left;
-    margin-right: -75px;
-    margin-left: -59px;
-    margin-top: 5px;
+.row {
+  display: flex;
+  margin-left: -4.2rem;
 }
-.navdic2 {
-  width: 50px;
-  float: left;
-  margin-right: -75px;
-  margin-left: -59px;
-  margin-top: 20px;
+.mySlides {
+  display: none;
 }
-section {
-  position: relative;
-  margin-left: 264px;
-  display: inline-block;
-  margin-top: -60px;
+.w3-content {
+  max-width: 630px;
+  margin-top: -2rem;
+  margin-left: 14rem;
 }
-div.scroll {
-  overflow: auto;
-  height: 442px;
-  margin-top: -370px;
+.w3-button {
+  border: 0px solid;
 }
-h4 {
-  padding: 10px;
-  box-shadow: 0px -3px 3px -2px #a3c7ad inset;
-  margin-right: 85px;
-  width: 250px;
-  position: relative;
-  font-size: 22px;
-  float: right;
+.w3-button:hover {
+  cursor: pointer;
+  background-color: rgb(103, 103, 103);
+}
+.w3-center {
   text-align: center;
-  top: -490px;
+  margin-left: 12rem;
 }
-.pic2, .pic3 {
-    width: 400px;
-    margin: 35px 90px;
-    position: relative;
-}
-.pic4, .pic1{
-    width: 600px;
-    position: relative;
-    float: right;
-    margin-right: 350px;
-}
-.pic4 {
-    border: solid;
+.demo:active {
+  background-color: #4caf50;
 }

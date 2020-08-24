@@ -401,6 +401,7 @@ h1 {
   margin-top: 0.8rem;
   font-size: 17px;
   font-weight: 600;
+  color: #143d60;
 }
 .cadmenu-title-image {
   width: 4rem;
@@ -412,5 +413,4 @@ h1 {
 }
 .cadpage-image {
   margin-left: 17rem;
-  margin-top: 1rem;
 }
