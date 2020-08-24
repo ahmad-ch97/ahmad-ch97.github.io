@@ -140,32 +140,28 @@ table {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f0e9e9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 30px;
+header {
   padding-top: 30px;
+  height: 30vh;
 }
+
 .popup {
-  width: 85px;
   background-color: #555;
   color: #fff;
   text-align: center;
-  position: relative;
-  float: right;
-  height: 24px;
   border-radius: 6px;
-  margin-top: -116px;
-  margin-right: 6px;
-  padding-top: 4px;
+  padding: 0.5rem 1.5rem;
 }
 
-.traingle {
+.triangle-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.triangle {
   content: "";
-  position: relative;
-  top: -70px;
-  margin-left: -45px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
@@ -180,14 +176,11 @@ body {
 h1 {
   position: relative;
   top: 34px;
-  color: white;
+  color: rgb(64, 63, 63);
 }
 .Atitle {
   top: 1px;
-  position: relative;
-  left: 58px;
-  width: 22%;
-  height: 133px;
+  margin-left: 3rem;
   float: left;
 }
 .rectangle1 {
@@ -209,17 +202,17 @@ h1 {
   position: relative;
 }
 .portfolio {
-  font-size: 50px;
+  font-size: 4rem;
   position: relative;
-  top: -211px;
+  top: -224px;
   left: 92px;
-  color: white;
+  color: rgb(64, 63, 63);
 }
-a {
+.aa {
   text-decoration: none;
 }
-.Atitle a {
-  width: 850px;
+.Atitle .aa {
+  width: 468px;
   height: 132px;
   position: relative;
   float: left;
@@ -227,52 +220,60 @@ a {
 .dropbtn {
   padding: 0px;
   margin: 0px;
-  width: 80px;
+  width: 6rem;
   z-index: 1;
   position: relative;
 }
 
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .dropdown {
-  width: 6%;
-  height: 82px;
   cursor: pointer;
-  margin-top: 60px;
-  margin-right: 100px;
+  margin-right: 6rem;
+  float: right;
+}
+
+.right-side-nav {
   float: right;
 }
 
 .dropdown-content {
   display: none;
-  float: right;
-  position: relative;
+  float: left;
   text-align: center;
   background-color: black;
   opacity: 0.8;
-  right: 92px;
-  top: 9px;
-  width: 526px;
+  margin-right: 0.5rem;
+  margin-top: 4.5rem;
 }
 
-.dropdown-content a {
+.dropdown-content .aa {
   color: white;
-  padding: 6px 36px;
-  margin-right: -1px;
+  padding: 6px 28px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
 }
+/*
 .dropdown:hover .popup {
   display: none;
 }
 .dropdown:hover .traingle {
   display: none;
+} */
+
+.dropdown-content .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
+  padding-bottom: -1px;
+  box-shadow: rgb(46, 202, 116);
 }
-.dropdown-content a:hover {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
-  padding-bottom: 8px;
-  box-shadow: aliceblue;
-}
+
 .dropdown:hover .dropbtn {
   opacity: 1;
   -webkit-animation: rotation 4s infinite linear;
@@ -285,11 +286,11 @@ a {
     -webkit-transform: rotate(359deg);
   }
 }
+
 .dropdown:hover .dropdown-content {
-  display: inline-block;
-  margin-left: 120px;
-  margin-top: -70px;
+  display: block;
 }
+
 .dropdown2 {
   display: inline-block;
 }
@@ -309,10 +310,10 @@ a {
   display: block;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
+  border-bottom: 1px solid rgb(46, 202, 116);
+  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
   padding-bottom: -1px;
-  box-shadow: aliceblue;
+  box-shadow: rgb(46, 202, 116);
 }
 .dropdown-content2 {
   float: right;
@@ -324,15 +325,14 @@ a {
   top: 0px;
   width: 110px;
   display: none;
+  text-align: center;
 }
-.dropdown-content2 a {
+.dropdown-content2 .aa {
+  padding: 5px 5px !important;
   color: white;
-  padding: 7px 4px;
-  margin-right: -1px;
   text-decoration: none;
   text-align: center;
   display: block;
-  width: 111px;
 }
 .dropdown2:hover .dropdown-content2 {
   display: block;
@@ -340,74 +340,77 @@ a {
 .dropbtn2:hover .dropdown-content2 {
   display: block;
 }
-.dropdown-content2:a {
+.dropdown-content2: .aa {
   border-bottom: 1px solid white;
 }
-.dropdown-content2 a:hover {
-  border-bottom: 1px solid white;
+.dropdown-content2 .aa:hover {
+  border-bottom: 1px solid rgb(46, 202, 116);
 }
-.headerbackground {
-  background-color: grey;
-  opacity: 1;
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 764px) {
+  .dropdown-content .aa {
+    padding: 6px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dropdown-content .aa {
+    padding: 6px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-content .aa {
+    padding: 6px 32px;
+  }
+}
+.sec1 {
+  display: flex;
   width: 100%;
-  z-index: -1;
-  height: 237px;
-  position: absolute;
-  margin-left: -30px;
-  margin-right: 10px;
-  margin-top: -30px;
-  box-shadow: 0px -3px 10px -2px black inset;
+  height: 66vh;
 }
-.menurectangle {
-  position: relative;
-  background-color: white;
-  width: 17%;
-  height: 517px;
-  margin-left: -360px;
-  margin-top: 206.5px;
-  float: left;
-  border-right: 1px solid black;
+.cadmenu {
+  width: 235px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  border-right: 2px solid black;
 }
-.CADmenu {
-  position: relative;
-  line-height: 35px;
-  margin-top: 290px;
-  height: 100%;
+
+.cadmenu a {
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 9px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
 }
-.CADmenu a {
-  position: relative;
-  display: block;
-  color: black;
-  width: 210px;
+
+.cadmenu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
 }
-h3,
-h2 {
-  font-size: 18px;
-  color: #375b8a;
+
+.cadmenu a.active {
+  background-color: #4caf50; /* Add a green color to the "active/current" link */
+  color: white;
 }
-h3 {
-  margin-top: 15px;
+.cadmenu-title {
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+  font-size: 17px;
+  font-weight: 600;
 }
-.CADmenu a:hover {
-  border-bottom: 0.5px solid black;
+.cadmenu-title-image {
+  width: 4rem;
+  margin-right: 0.5rem;
 }
-.navdic {
-  width: 50px;
-  float: left;
-  margin-right: -75px;
-  margin-left: -59px;
-  margin-top: 5px;
+.row {
+  display: flex;
+  margin-left: -4.2rem;
 }
-.navdic2 {
-  width: 50px;
-  float: left;
-  margin-right: -75px;
-  margin-left: -59px;
-  margin-top: 20px;
-}
-.pictures {
-  position: relative;
-  margin-top: -460px;
-  margin-left: 530px;
-  width: 38%;
+.cadpage-image {
+  margin-left: 17rem;
+  margin-top: 1rem;
 }
