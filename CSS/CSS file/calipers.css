@@ -415,23 +415,10 @@ h1 {
   margin-left: 25rem;
   position: absolute;
 }
-.cmimage2 {
-  width: 74%;
-  position: absolute;
-  margin-top: -13rem;
-  margin-left: 44rem;
-}
 .cmimage {
-  width: 70%;
-  margin-left: -6rem;
+  width: 100%;
+  margin-left: -3rem;
   display: block;
   z-index: 2;
-  margin-top: -1rem;
-}
-.cmimage3 {
-  width: 78%;
-  position: absolute;
-  margin-top: -8rem;
-  margin-left: 14rem;
-  z-index: -1;
+  margin-top: 6rem;
 }
