@@ -267,11 +267,11 @@ h1 {
   display: none;
 } */
 
-.dropdown-content .aa:hover {
-  border-bottom: 1px solid rgb(46, 202, 116);
-  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
+.dropdown-content a:hover {
+  border-bottom: 1px solid rgb(107, 186, 255);
+  box-shadow: 0px 0px 5px 0px rgb(107, 186, 255) inset;
   padding-bottom: -1px;
-  box-shadow: rgb(46, 202, 116);
+  box-shadow: rgb(107, 186, 255);
 }
 
 .dropdown:hover .dropbtn {
@@ -310,10 +310,10 @@ h1 {
   display: block;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid rgb(46, 202, 116);
-  box-shadow: 0px 0px 5px 0px rgb(46, 202, 116) inset;
+  border-bottom: 1px solid rgb(107, 186, 255);
+  box-shadow: 0px 0px 5px 0px rgb(107, 186, 255) inset;
   padding-bottom: -1px;
-  box-shadow: rgb(46, 202, 116);
+  box-shadow: rgb(107, 186, 255);
 }
 .dropdown-content2 {
   float: right;
@@ -341,7 +341,7 @@ h1 {
   display: block;
 }
 .dropdown-content2 .aa:hover {
-  border-bottom: 1px solid rgb(46, 202, 116);
+  border-bottom: 1px solid rgb(107, 186, 255);
 }
 @media (min-width: 764px) {
   .dropdown-content .aa {

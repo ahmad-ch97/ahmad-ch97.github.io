@@ -146,7 +146,6 @@ table {
 }
 
 body {
-  background-color: #f0e9e9;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -182,7 +181,6 @@ body {
 h1 {
   position: relative;
   top: 34px;
-  color: white;
 }
 .Atitle {
   top: 1px;
@@ -212,7 +210,6 @@ h1 {
   position: relative;
   top: -224px;
   left: 92px;
-  color: white;
 }
 a {
   text-decoration: none;
@@ -222,6 +219,7 @@ a {
   height: 132px;
   position: relative;
   float: left;
+  color: rgb(64, 63, 63);
 }
 .dropbtn {
   padding: 0px;
@@ -518,4 +516,8 @@ h4 {
   #rect3 {
     margin-top: 9rem;
   }
+}
+.research1 {
+  margin-top: -2rem;
+  display: inline-block;
 }
