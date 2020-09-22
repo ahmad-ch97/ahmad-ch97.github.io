@@ -261,8 +261,8 @@
         </script>
       </div>
     </div>
-    <div class="row1.5">
-      <div class="sec1">
+    <div class="row15">
+      <div class="sec15">
         <div class="slideshow-container6">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides6 fade6">
@@ -332,7 +332,7 @@
     </div>
     <div class="row2">
       <!-- Slideshow container1 -->
-      <div class="sec1">
+      <div class="sec2">
         <div class="slideshow-container4">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides4 fade4">
@@ -393,7 +393,7 @@
           }
         </script>
       </div>
-      <div class="sec1">
+      <div class="sec2">
         <div class="slideshow-container5">
           <!-- Full-width images with number and caption text -->
           <div class="mySlides5 fade5">
@@ -451,6 +451,110 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active5";
+          }
+        </script>
+      </div>
+    </div>
+    <div class="row3">
+      <div class="sec3">
+        <div class="slideshow-container7">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">1 / 8</div>
+            <img src="CSS/image/bag1 (4).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">2 / 8</div>
+            <img src="CSS/image/bag1 (5).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">3 / 8</div>
+            <img src="CSS/image/bag1 (3).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">4 / 8</div>
+            <img src="CSS/image/bag1 (6).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">5 / 8</div>
+            <img src="CSS/image/bag1 (8).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">6 / 8</div>
+            <img src="CSS/image/bag1 (1).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">7 / 8</div>
+            <img src="CSS/image/bag1 (10).jpg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+
+          <div class="mySlides7 fade7">
+            <div class="numbertext7">8 / 8</div>
+            <img src="CSS/image/bag2.jpeg" style="width: 100%" />
+            <div class="text7">Leather Messenger Bag</div>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev7" onclick="plusSlides7(-1)">&#10094;</a>
+          <a class="next7" onclick="plusSlides7(1)">&#10095;</a>
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot7" onclick="currentSlide7(1)"></span>
+            <span class="dot7" onclick="currentSlide7(2)"></span>
+            <span class="dot7" onclick="currentSlide7(3)"></span>
+            <span class="dot7" onclick="currentSlide7(4)"></span>
+            <span class="dot7" onclick="currentSlide7(5)"></span>
+            <span class="dot7" onclick="currentSlide7(6)"></span>
+            <span class="dot7" onclick="currentSlide7(7)"></span>
+            <span class="dot7" onclick="currentSlide7(8)"></span>
+          </div>
+        </div>
+        <br />
+        <!-- The dots/circles -->
+        <script>
+          var slideIndex = 1;
+          showSlides7(slideIndex);
+
+          // Next/previous controls
+          function plusSlides7(n) {
+            showSlides7((slideIndex += n));
+          }
+
+          // Thumbnail image controls
+          function currentSlide7(n) {
+            showSlides7((slideIndex = n));
+          }
+
+          function showSlides7(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides7");
+            var dots = document.getElementsByClassName("dot7");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active7", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active7";
           }
         </script>
       </div>
