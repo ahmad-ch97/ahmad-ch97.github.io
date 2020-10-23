@@ -416,9 +416,9 @@ h1 {
   position: absolute;
 }
 .cmimage {
-  width: 100%;
+  width: 80%;
   margin-left: -3rem;
   display: block;
   z-index: 2;
-  margin-top: 6rem;
+  margin-top: 4.5rem;
 }
