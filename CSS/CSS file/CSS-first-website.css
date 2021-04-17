@@ -168,8 +168,9 @@ body {
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
-  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 0.2rem 1rem;
 }
 
 .triangle-div {
@@ -188,14 +189,16 @@ body {
 }
 
 .pagetitle {
-  width: 66px;
-  top: 38px;
+  width: 45px;
+  top: 14px;
+  margin-left: 1rem;
   position: relative;
 }
 h1 {
   position: relative;
-  top: 34px;
-  color: white;
+  top: 13px;
+  margin-left: 0.7rem;
+  font-size: 13px;
 }
 .Atitle {
   top: 1px;
@@ -203,27 +206,27 @@ h1 {
   float: left;
 }
 .rectangle1 {
-  height: 88px;
+  height: 50px;
   width: 2px;
   background-color: #bfbfbf;
   opacity: 0.7;
-  top: -56px;
+  top: -50px;
   left: 73px;
   position: relative;
 }
 .rectangle2 {
-  height: 88px;
+  height: 50px;
   width: 2px;
   background-color: #bfbfbf;
   opacity: 0.7;
-  top: -144px;
+  top: -100px;
   left: 80px;
   position: relative;
 }
 .portfolio {
-  font-size: 5rem;
+  font-size: 2.8rem;
   position: relative;
-  top: -224px;
+  top: -147px;
   left: 92px;
   color: white;
 }
@@ -232,14 +235,15 @@ h1 {
 }
 .Atitle .aa {
   width: 323px;
-  height: 132px;
   position: relative;
   float: left;
+  color: white;
+  height: 28vh;
 }
 .dropbtn {
   padding: 0px;
   margin: 0px;
-  width: 6rem;
+  width: 4rem;
   z-index: 1;
   position: relative;
 }
@@ -253,7 +257,7 @@ h1 {
 
 .dropdown {
   cursor: pointer;
-  margin-right: 6rem;
+  margin-right: 4rem;
   float: right;
 }
 
@@ -268,12 +272,12 @@ h1 {
   background-color: black;
   opacity: 0.8;
   margin-right: 0.5rem;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
+  font-size: 13px;
 }
 
 .dropdown-content .aa {
   color: white;
-  padding: 6px 28px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -286,11 +290,11 @@ h1 {
   display: none;
 } */
 
-.dropdown-content .aa:hover {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
+.dropdown-content a:hover {
+  border-bottom: 1px solid whitesmoke;
+  box-shadow: 0px 0px 5px 0px whitesmoke inset;
   padding-bottom: -1px;
-  box-shadow: aliceblue;
+  box-shadow: whitesmoke;
 }
 
 .dropdown:hover .dropbtn {
@@ -316,23 +320,23 @@ h1 {
 .dropbtn2 {
   width: 115px;
   cursor: pointer;
-  padding: 7px 16px;
-  display: block;
 }
 .dropdown2 .dropbtn2 {
   color: white;
-  padding-top: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-decoration: none;
   text-align: center;
   border: none;
   background-color: black;
   display: block;
+  font-size: 13px;
 }
 .dropdown2:hover .dropbtn2 {
-  border-bottom: 1px solid white;
-  box-shadow: 0px 0px 5px 0px #888888 inset;
+  border-bottom: 1px solid whitesmoke;
+  box-shadow: 0px 0px 5px 0px whitesmoke inset;
   padding-bottom: -1px;
-  box-shadow: aliceblue;
+  box-shadow: whitesmoke;
 }
 .dropdown-content2 {
   float: right;
@@ -340,9 +344,8 @@ h1 {
   text-align: center;
   background-color: black;
   opacity: 0.8;
-  right: 2px;
-  top: 0px;
-  width: 110px;
+  right: 0.5px;
+  width: 115px;
   display: none;
   text-align: center;
 }
@@ -359,33 +362,15 @@ h1 {
 .dropbtn2:hover .dropdown-content2 {
   display: block;
 }
-.dropdown-content2: .aa {
-  border-bottom: 1px solid white;
+.dropdown-content2:a {
+  border-bottom: 1px solid whitesmoke;
 }
-.dropdown-content2 .aa:hover {
-  border-bottom: 1px solid white;
+.dropdown-content2 a:hover {
+  border-bottom: 1px solid whitesmoke;
 }
-@media (min-width: 764px) {
-  .dropdown-content .aa {
-    padding: 6px 10px;
-  }
-}
-
-@media (min-width: 764px) {
-  .dropdown-content .aa {
-    padding: 6px 10px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .dropdown-content .aa {
-    padding: 6px 20px;
-  }
-}
-
 @media (min-width: 1200px) {
   .dropdown-content .aa {
-    padding: 6px 32px;
+    padding: 5px 32px;
   }
 }
 .roundedpic {
@@ -406,7 +391,7 @@ h1 {
 }
 .title {
   margin-top: 1rem;
-  font-size: 2.5em;
+  font-size: 2.1em;
   font-weight: 550;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
@@ -415,7 +400,7 @@ h1 {
 .text-white {
   margin-top: 0.5rem;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 200;
 }
 .socialicons {

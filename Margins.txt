@@ -1,0 +1,14 @@
+Absolute
+Margin-left
+Margin-top: for buttom bottons
+--------------------------------------
+Remove display
+Top margin: 16rem
+--------------------------------------
+Display: inline
+justify-content: center;
+margin-right: 4rem;
+text-align: center;
+clear: both;
+--------------------------------------
+Height: 40
