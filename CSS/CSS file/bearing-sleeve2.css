@@ -218,7 +218,7 @@ h1 {
   width: 340px;
   position: relative;
   float: left;
-  color: white;
+  color: rgb(56, 56, 56);
   height: 28vh;
 }
 .dropbtn {
@@ -401,7 +401,7 @@ h1 {
   position: absolute;
 }
 .cmimage {
-  width: 65%;
+  width: 63%;
   margin-left: 5rem;
   display: block;
   z-index: 2;
