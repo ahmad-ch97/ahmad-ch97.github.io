@@ -377,7 +377,8 @@ h1 {
 .roundedpic {
   clear: both;
   border-radius: 50%;
-  width: 46%;
+  width: 20%;
+  transform: rotate(3deg);
 }
 
 .container {
@@ -388,7 +389,7 @@ h1 {
 }
 .pageinfo {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .title {
   margin-top: 1rem;
