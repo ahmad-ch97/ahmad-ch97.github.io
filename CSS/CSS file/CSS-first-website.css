@@ -377,8 +377,8 @@ h1 {
 .roundedpic {
   clear: both;
   border-radius: 50%;
-  width: 20%;
-  transform: rotate(3deg);
+  width: 55%;
+  transform: rotate(-1deg);
 }
 
 .container {
