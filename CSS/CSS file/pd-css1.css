@@ -385,6 +385,11 @@ a {
   cursor: pointer;
   text-align: center;
 }
+.productsimg {
+  display: inline;
+  text-align: center;
+  margin-right: 0.8rem;
+}
 .products a {
   text-decoration: none;
   text-align: center;
@@ -394,12 +399,12 @@ a {
   color: #074170;
   font-family: "Times New Roman", Times, serif;
 }
-.products button {
+.products .ab {
   text-decoration: none;
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  padding: 0.2rem 4rem;
+  padding: 0.2rem 11rem;
   color: #074170;
   font-family: "Times New Roman", Times, serif;
   border-top: none;
@@ -424,7 +429,12 @@ a {
 }
 
 #sec2 {
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  width: 100%;
 }
 * {
   box-sizing: border-box;

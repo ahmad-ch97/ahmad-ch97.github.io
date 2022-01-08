@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ahmad-ch : Product Design</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="CSS/image/A2-gold-transparent.png"
+    />
+    <link rel="stylesheet" href="CSS/CSS file/pd-css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <header>
+    <div class="Atitle">
+      <a class="aa" href="index.html">
+        <img class="pagetitle" src="CSS/image/A2-gold-transparent.png" />
+        <h1>ahmad-ch</h1>
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+        <p class="portfolio">Product Design</p>
+      </a>
+    </div>
+    <nav class="dropdown">
+      <div class="right-side-nav">
+        <div class="popup">Menu</div>
+        <div class="triangle-div">
+          <span class="triangle"><!-- --></span>
+        </div>
+        <div class="img-div">
+          <img class="dropbtn" src="CSS/image/vector-gears.png" />
+        </div>
+      </div>
+      <div class="dropdown-content">
+        <a class="aa" href="index.html">Cover Page</a>
+        <div class="dropdown2">
+          <button class="dropbtn2">
+            projects<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content2">
+            <a class="aa" href="Researche-page.html">Research</a>
+            <a class="aa" href="product-design.html">Product Design</a>
+            <a class="aa" href="CAD-page.html">CAD</a>
+            <a class="aa" href="jbjb.html">DIY</a>
+          </div>
+        </div>
+        <a class="aa" href="About_me.html">About me</a>
+        <a class="aa" href="Resume.html">Resume</a>
+      </div>
+    </nav>
+  </header>
+  <section class="sec1">
+    <div class="products">
+        <button class ="ab" href="thunder.html" onclick="thunder()">Thunder</button>
+        <button class ="ab" href="compass.html" onclick="compass()">Compass</button>
+        <button class ="ab" href="Pnuematic.html" onclick="ooc()">Pneumatic OOC system</button>
+      </div>
+  </section>
+  <section id="sec2">
+    <div id="dooble">
+        <div class="slideshow">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 9</div>
+            <img src="CSS/image/Slide1.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 9</div>
+            <img src="CSS/image/Slide2.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 9</div>
+            <img src="CSS/image/Slide3.JPG" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img src="CSS/image/Slide4.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img src="CSS/image/Slide5.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img src="CSS/image/Slide6.JPG" style="width:100%">
+          </div>
+    
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img src="CSS/image/Slide7.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img src="CSS/image/Slide8.JPG" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 9</div>
+            <img src="CSS/image/Slide9.JPG" style="width:100%">
+          </div>
+  
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+        <span class="dot" onclick="currentSlide(8)"></span> 
+        <span class="dot" onclick="currentSlide(9)"></span> 
+          </div>
+  </section>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>
