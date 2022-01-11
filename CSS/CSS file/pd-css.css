@@ -373,38 +373,35 @@ a {
   }
 }
 .sec1 {
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 2rem;
   text-align: center;
+  margin-bottom: 2rem;
   display: flex;
   width: 100%;
-}
-.products {
-  display: inline;
-  cursor: pointer;
-  text-align: center;
+  padding: 0 2rem;
 }
 .products a {
   text-decoration: none;
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  padding: 0.2rem 4rem;
   color: #074170;
   font-family: "Times New Roman", Times, serif;
 }
-.products button {
+.products .ab {
   text-decoration: none;
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  padding: 0.2rem 4rem;
+  padding: 0rem 1.5rem;
+  width: 260px;
   color: #074170;
   font-family: "Times New Roman", Times, serif;
   border-top: none;
   border-bottom: none;
   border-left: none;
+  text-align: center;
   border-right: none;
   background-color: white;
   cursor: pointer;
