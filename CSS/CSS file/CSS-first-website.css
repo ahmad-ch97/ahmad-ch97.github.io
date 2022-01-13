@@ -164,6 +164,10 @@ body {
   opacity: 0.4;
   z-index: -2;
 }
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
 .popup {
   background-color: #555;
   color: #fff;
@@ -203,7 +207,6 @@ h1 {
 .Atitle {
   top: 1px;
   margin-left: 3rem;
-  float: left;
 }
 .rectangle1 {
   height: 50px;
@@ -236,7 +239,6 @@ h1 {
 .Atitle .aa {
   width: 323px;
   position: relative;
-  float: left;
   color: white;
   height: 28vh;
 }
@@ -258,7 +260,6 @@ h1 {
 .dropdown {
   cursor: pointer;
   margin-right: 4rem;
-  float: right;
 }
 
 .right-side-nav {
@@ -272,7 +273,6 @@ h1 {
   background-color: black;
   opacity: 0.8;
   margin-right: 0.5rem;
-  margin-top: 3rem;
   font-size: 13px;
 }
 
@@ -369,10 +369,13 @@ h1 {
 .dropdown-content2 a:hover {
   border-bottom: 1px solid whitesmoke;
 }
-@media (min-width: 1200px) {
-  .dropdown-content .aa {
-    padding: 5px 32px;
+@media (min-width: 820px) {
+  .dropdown-content {
+    margin-top: 3rem;
   }
+}
+.dropdown-content .aa {
+  padding: 5px 32px;
 }
 .roundedpic {
   clear: both;
@@ -383,13 +386,13 @@ h1 {
 
 .container {
   clear: both;
-  margin-top: 12rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .pageinfo {
   text-align: center;
-  margin-top: 2rem;
 }
 .title {
   margin-top: 1rem;
@@ -406,10 +409,9 @@ h1 {
   font-weight: 200;
 }
 .socialicons {
-  clear: both;
   justify-content: center;
   position: absolute;
-  margin-top: 26rem;
+  bottom: 2rem;
 }
 .ba {
   padding: 18px;
@@ -460,4 +462,10 @@ h1 {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.main-header .fa-caret-down {
+  margin-left: 0.25rem;
+  position: relative;
+  top: 2px;
 }

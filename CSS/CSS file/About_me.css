@@ -142,7 +142,8 @@ table {
 
 header {
   padding-top: 2rem;
-  margin-bottom: 11.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .popup {
@@ -182,9 +183,7 @@ h1 {
   font-size: 13px;
 }
 .Atitle {
-  top: 1px;
   margin-left: 3rem;
-  float: left;
 }
 .rectangle1 {
   height: 50px;
@@ -239,7 +238,6 @@ h1 {
 .dropdown {
   cursor: pointer;
   margin-right: 4rem;
-  float: right;
 }
 
 .right-side-nav {
@@ -253,7 +251,6 @@ h1 {
   background-color: black;
   opacity: 0.8;
   margin-right: 0.5rem;
-  margin-top: 3rem;
   font-size: 13px;
 }
 
@@ -350,13 +347,16 @@ h1 {
 .dropdown-content2 .aa:hover {
   border-bottom: 1px solid rgb(46, 202, 116);
 }
-@media (min-width: 1200px) {
-  .dropdown-content .aa {
-    padding: 5px 32px;
+@media (min-width: 996px) {
+  .dropdown-content {
+    margin-top: 3rem;
   }
 }
+.dropdown-content .aa {
+  padding: 5px 32px;
+}
 .sec1 {
-  margin-top: 13rem;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -368,7 +368,6 @@ h1 {
 }
 .me {
   width: 55%;
-  margin-left: 5rem;
   background-color: white;
   padding: 0.8rem;
   border-radius: 0.8rem;
@@ -460,4 +459,10 @@ h1 {
   background-color: rgb(19, 29, 142);
   padding: 1rem;
   border-radius: 2rem;
+}
+
+header .fa-caret-down {
+  margin-left: 0.25rem;
+  position: relative;
+  top: 2px;
 }
