@@ -1,529 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ahmad-ch : DIY Projects</title>
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="CSS/image/A2-gold-transparent.png"
-    />
-    <link rel="stylesheet" href="CSS/CSS file/DIY-Projects.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <header>
-    <div class="Atitle">
-      <a class="aa" href="index.html">
-        <img class="pagetitle" src="CSS/image/A2-gold-transparent.png" />
-        <h1>ahmad-ch</h1>
-        <div class="rectangle1"></div>
-        <div class="rectangle2"></div>
-        <p class="portfolio">DIY Projects</p>
-      </a>
-    </div>
-    <nav class="dropdown">
-      <div class="right-side-nav">
-        <div class="popup">Menu</div>
-        <div class="triangle-div">
-          <span class="triangle"><!-- --></span>
-        </div>
-        <div class="img-div">
-          <img class="dropbtn" src="CSS/image/vector-gears.png" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ahmad-ch : DIY Projects</title>
+  <link rel="shortcut icon" type="image/x-icon" href="CSS/image/A2-gold-transparent.png" />
+  <link rel="stylesheet" href="CSS/CSS file/DIY-Projects.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<header>
+  <div class="Atitle">
+    <a class="aa" href="index.html">
+      <img class="pagetitle" src="CSS/image/A2-gold-transparent.png" />
+      <h1>ahmad-ch</h1>
+      <div class="rectangle1"></div>
+      <div class="rectangle2"></div>
+      <p class="portfolio">DIY Projects</p>
+    </a>
+  </div>
+  <nav class="dropdown">
+    <div class="right-side-nav">
+      <div class="popup">Menu</div>
+      <div class="triangle-div">
+        <span class="triangle"><!-- --></span>
       </div>
-      <div class="dropdown-content">
-        <a class="aa" href="index.html">Cover page</a>
-        <div class="dropdown2">
-          <button class="dropbtn2">
-            projects<i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content2">
-            <a class="aa" href="Researche-page.html">Research</a>
-            <a class="aa" href="Researche-page.html">Product Design</a>
-            <a class="aa" href="CAD-page.html">CAD</a>
-            <a class="aa" href="jbjb.html">DIY</a>
-          </div>
-        </div>
-        <a class="aa" href="About_me.html">About me</a>
-        <a class="aa" href="Resume.html">Resume</a>
-      </div>
-    </nav>
-  </header>
-  <body>
-    <div class="row">
-      <!-- Slideshow container1 -->
-      <div class="sec1">
-        <div class="slideshow-container2">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides2 fade2">
-            <div class="numbertext2">1 / 3</div>
-            <img src="CSS/image/mychess1.jpeg" style="width: 100%" />
-            <div class="text2">Chess Board</div>
-          </div>
-
-          <div class="mySlides2 fade2">
-            <div class="numbertext2">2 / 3</div>
-            <img src="CSS/image/mychess2.jpg" style="width: 100%" />
-            <div class="text2">Chess Board</div>
-          </div>
-
-          <div class="mySlides2 fade2">
-            <div class="numbertext2">3 / 3</div>
-            <img src="CSS/image/mychess3.jpg" style="width: 100%" />
-            <div class="text2">Chess Board</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
-          <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot2" onclick="currentSlide2(1)"></span>
-            <span class="dot2" onclick="currentSlide2(2)"></span>
-            <span class="dot2" onclick="currentSlide2(3)"></span>
-          </div>
-        </div>
-        <br />
-        <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides2(slideIndex);
-
-          // Next/previous controls
-          function plusSlides2(n) {
-            showSlides2((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide2(n) {
-            showSlides2((slideIndex = n));
-          }
-
-          function showSlides2(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides2");
-            var dots = document.getElementsByClassName("dot2");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active2", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active2";
-          }
-        </script>
-      </div>
-      <div class="sec1">
-        <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-            <img src="CSS/image/Heart-box.jpg" style="width: 100%" />
-            <div class="text">Heart Shaped Box</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 2</div>
-            <img src="CSS/image/Heart-box2.jpg" style="width: 100%" />
-            <div class="text">Heart Shaped Box</div>
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
-        </div>
-        <br />
-
-        <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          // Next/previous controls
-          function plusSlides(n) {
-            showSlides((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide(n) {
-            showSlides((slideIndex = n));
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
-        </script>
-        <!-- Slideshow container2 -->
-      </div>
-
-      <div class="sec1">
-        <div class="slideshow-container3">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides3 fade3">
-            <div class="numbertext3">1 / 4</div>
-            <img src="CSS/image/myplane1.jpg" style="width: 100%" />
-            <div class="text3">Wooden Biplane</div>
-          </div>
-
-          <div class="mySlides3 fade3">
-            <div class="numbertext3">2 / 4</div>
-            <img src="CSS/image/myplane2.jpg" style="width: 100%" />
-            <div class="text3">Wooden Biplane</div>
-          </div>
-
-          <div class="mySlides3 fade3">
-            <div class="numbertext3">3 / 4</div>
-            <img src="CSS/image/myplane3.jpg" style="width: 100%" />
-            <div class="text3">Wooden Biplane</div>
-          </div>
-
-          <div class="mySlides3 fade3">
-            <div class="numbertext3">4 / 4</div>
-            <img src="CSS/image/myplane5.jpg" style="width: 100%" />
-            <div class="text3">Wooden Biplane</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
-          <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot3" onclick="currentSlid3(1)"></span>
-            <span class="dot3" onclick="currentSlide3(2)"></span>
-            <span class="dot3" onclick="currentSlide3(3)"></span>
-            <span class="dot3" onclick="currentSlide3(4)"></span>
-          </div>
-        </div>
-        <br />
-        <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides3(slideIndex);
-
-          // Next/previous controls
-          function plusSlides3(n) {
-            showSlides3((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide3(n) {
-            showSlides3((slideIndex = n));
-          }
-
-          function showSlides3(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides3");
-            var dots = document.getElementsByClassName("dot3");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active3", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active3";
-          }
-        </script>
+      <div class="img-div">
+        <img class="dropbtn" src="CSS/image/vector-gears.png" />
       </div>
     </div>
-    <div class="row3">
-      <div class="sec3">
-        <div class="slideshow-container7">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides7 fade7">
-            <div class="numbertext7">1 / 4</div>
-            <img src="CSS/image/Bag101.jpg" style="width: 100%" />
-            <div class="text7">Leather Messenger Bag</div>
-          </div>
-
-          <div class="mySlides7 fade7">
-            <div class="numbertext7">2 / 4</div>
-            <img src="CSS/image/bag102.jpg" style="width: 100%" />
-            <div class="text7">Leather Messenger Bag</div>
-          </div>
-
-          <div class="mySlides7 fade7">
-            <div class="numbertext7">3 / 4</div>
-            <img src="CSS/image/Bag103.jpg" style="width: 100%" />
-            <div class="text7">Leather Messenger Bag</div>
-          </div>
-
-          <div class="mySlides7 fade7">
-            <div class="numbertext7">4 / 4</div>
-            <img src="CSS/image/bag1 (9).jpg" style="width: 100%" />
-            <div class="text7">Leather Messenger Bag</div>
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev7" onclick="plusSlides7(-1)">&#10094;</a>
-          <a class="next7" onclick="plusSlides7(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot7" onclick="currentSlide7(1)"></span>
-            <span class="dot7" onclick="currentSlide7(2)"></span>
-            <span class="dot7" onclick="currentSlide7(3)"></span>
-            <span class="dot7" onclick="currentSlide7(4)"></span>
-          </div>
+    <div class="dropdown-content">
+      <a class="aa" href="index.html">Cover page</a>
+      <div class="dropdown2">
+        <button class="dropbtn2">
+          projects<i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content2">
+          <a class="aa" href="Researche-page.html">Research</a>
+          <a class="aa" href="product-design.html">Product Design</a>
+          <a class="aa" href="jbjb.html">DIY</a>
         </div>
-        <br />
-        <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides7(slideIndex);
-
-          // Next/previous controls
-          function plusSlides7(n) {
-            showSlides7((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide7(n) {
-            showSlides7((slideIndex = n));
-          }
-
-          function showSlides7(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides7");
-            var dots = document.getElementsByClassName("dot7");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active7", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active7";
-          }
-        </script>
       </div>
+      <a class="aa" href="About_me.html">About me</a>
+      <a class="aa" href="Resume.html">Resume</a>
     </div>
-    <div class="row2">
-      <!-- Slideshow container1 -->
-      <div class="sec2">
-        <div class="slideshow-container4">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides4 fade4">
-            <div class="numbertext4">1 / 2</div>
-            <img src="CSS/image/minis.jpg" style="width: 100%" />
-            <div class="text4">MiniSword</div>
-          </div>
+  </nav>
+</header>
 
-          <div class="mySlides4 fade4">
-            <div class="numbertext4">2 / 2</div>
-            <img src="CSS/image/minis2.jpg" style="width: 100%" />
-            <div class="text4">MiniSword</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
-          <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot4" onclick="currentSlide4(1)"></span>
-            <span class="dot4" onclick="currentSlide4(2)"></span>
-          </div>
+<body>
+  <div class="row">
+    <!-- Slideshow container1 -->
+    <div class="sec1">
+      <div class="slideshow-container2">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides2 fade2">
+          <div class="numbertext2">1 / 3</div>
+          <img src="CSS/image/mychess1.jpeg" style="width: 100%" />
+          <div class="text2">Chess Board</div>
         </div>
-        <br />
-        <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides4(slideIndex);
 
-          // Next/previous controls
-          function plusSlides4(n) {
-            showSlides4((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide4(n) {
-            showSlides4((slideIndex = n));
-          }
-
-          function showSlides4(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides4");
-            var dots = document.getElementsByClassName("dot4");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active4", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active4";
-          }
-        </script>
-      </div>
-      <div class="sec2">
-        <div class="slideshow-container5">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides5 fade5">
-            <div class="numbertext5">1 / 2</div>
-            <img src="CSS/image/snowman1.jpg" style="width: 100%" />
-            <div class="text5">Clay Snowman</div>
-          </div>
-
-          <div class="mySlides5 fade5">
-            <div class="numbertext5">2 / 2</div>
-            <img src="CSS/image/snowman2.jpg" style="width: 100%" />
-            <div class="text5">Clay Snowman</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev5" onclick="plusSlides5(-1)">&#10094;</a>
-          <a class="next5" onclick="plusSlides5(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot5" onclick="currentSlide5(1)"></span>
-            <span class="dot5" onclick="currentSlide5(2)"></span>
-          </div>
+        <div class="mySlides2 fade2">
+          <div class="numbertext2">2 / 3</div>
+          <img src="CSS/image/mychess2.jpg" style="width: 100%" />
+          <div class="text2">Chess Board</div>
         </div>
-        <br />
+
+        <div class="mySlides2 fade2">
+          <div class="numbertext2">3 / 3</div>
+          <img src="CSS/image/mychess3.jpg" style="width: 100%" />
+          <div class="text2">Chess Board</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
         <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides5(slideIndex);
-
-          // Next/previous controls
-          function plusSlides5(n) {
-            showSlides5((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide5(n) {
-            showSlides5((slideIndex = n));
-          }
-
-          function showSlides5(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides5");
-            var dots = document.getElementsByClassName("dot5");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active5", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active5";
-          }
-        </script>
+        <div style="text-align: center">
+          <span class="dot2" onclick="currentSlide2(1)"></span>
+          <span class="dot2" onclick="currentSlide2(2)"></span>
+          <span class="dot2" onclick="currentSlide2(3)"></span>
+        </div>
       </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides2(slideIndex);
+
+        // Next/previous controls
+        function plusSlides2(n) {
+          showSlides2((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide2(n) {
+          showSlides2((slideIndex = n));
+        }
+
+        function showSlides2(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides2");
+          var dots = document.getElementsByClassName("dot2");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active2", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active2";
+        }
+      </script>
     </div>
-    <div class="row15">
-      <div class="sec15">
-        <div class="slideshow-container6">
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides6 fade6">
-            <div class="numbertext6">1 / 2</div>
-            <img src="CSS/image/wallet101.png" style="width: 100%" />
-            <div class="text6">Wallet</div>
-          </div>
-
-          <div class="mySlides6 fade6">
-            <div class="numbertext6">2 / 2</div>
-            <img src="CSS/image/wallet102.jpg" style="width: 100%" />
-            <div class="text6">Wallet</div>
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev6" onclick="plusSlides6(-1)">&#10094;</a>
-          <a class="next6" onclick="plusSlides6(1)">&#10095;</a>
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot6" onclick="currentSlide6(1)"></span>
-            <span class="dot6" onclick="currentSlide6(2)"></span>
-          </div>
+    <div class="sec1">
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img src="CSS/image/Heart-box.jpg" style="width: 100%" />
+          <div class="text">Heart Shaped Box</div>
         </div>
-        <br />
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img src="CSS/image/Heart-box2.jpg" style="width: 100%" />
+          <div class="text">Heart Shaped Box</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         <!-- The dots/circles -->
-        <script>
-          var slideIndex = 1;
-          showSlides6(slideIndex);
-
-          // Next/previous controls
-          function plusSlides6(n) {
-            showSlides6((slideIndex += n));
-          }
-
-          // Thumbnail image controls
-          function currentSlide6(n) {
-            showSlides6((slideIndex = n));
-          }
-
-          function showSlides6(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides6");
-            var dots = document.getElementsByClassName("dot6");
-            if (n > slides.length) {
-              slideIndex = 1;
-            }
-            if (n < 1) {
-              slideIndex = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active6", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active6";
-          }
-        </script>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
       </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      </script>
+      <!-- Slideshow container2 -->
     </div>
-  </body>
+
+    <div class="sec1">
+      <div class="slideshow-container3">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides3 fade3">
+          <div class="numbertext3">1 / 4</div>
+          <img src="CSS/image/myplane1.jpg" style="width: 100%" />
+          <div class="text3">Wooden Biplane</div>
+        </div>
+
+        <div class="mySlides3 fade3">
+          <div class="numbertext3">2 / 4</div>
+          <img src="CSS/image/myplane2.jpg" style="width: 100%" />
+          <div class="text3">Wooden Biplane</div>
+        </div>
+
+        <div class="mySlides3 fade3">
+          <div class="numbertext3">3 / 4</div>
+          <img src="CSS/image/myplane3.jpg" style="width: 100%" />
+          <div class="text3">Wooden Biplane</div>
+        </div>
+
+        <div class="mySlides3 fade3">
+          <div class="numbertext3">4 / 4</div>
+          <img src="CSS/image/myplane5.jpg" style="width: 100%" />
+          <div class="text3">Wooden Biplane</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+        <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot3" onclick="currentSlid3(1)"></span>
+          <span class="dot3" onclick="currentSlide3(2)"></span>
+          <span class="dot3" onclick="currentSlide3(3)"></span>
+          <span class="dot3" onclick="currentSlide3(4)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides3(slideIndex);
+
+        // Next/previous controls
+        function plusSlides3(n) {
+          showSlides3((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide3(n) {
+          showSlides3((slideIndex = n));
+        }
+
+        function showSlides3(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides3");
+          var dots = document.getElementsByClassName("dot3");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active3", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active3";
+        }
+      </script>
+    </div>
+  </div>
+  <div class="row3">
+    <div class="sec3">
+      <div class="slideshow-container7">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides7 fade7">
+          <div class="numbertext7">1 / 4</div>
+          <img src="CSS/image/Bag101.jpg" style="width: 100%" />
+          <div class="text7">Leather Messenger Bag</div>
+        </div>
+
+        <div class="mySlides7 fade7">
+          <div class="numbertext7">2 / 4</div>
+          <img src="CSS/image/bag102.jpg" style="width: 100%" />
+          <div class="text7">Leather Messenger Bag</div>
+        </div>
+
+        <div class="mySlides7 fade7">
+          <div class="numbertext7">3 / 4</div>
+          <img src="CSS/image/Bag103.jpg" style="width: 100%" />
+          <div class="text7">Leather Messenger Bag</div>
+        </div>
+
+        <div class="mySlides7 fade7">
+          <div class="numbertext7">4 / 4</div>
+          <img src="CSS/image/bag1 (9).jpg" style="width: 100%" />
+          <div class="text7">Leather Messenger Bag</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev7" onclick="plusSlides7(-1)">&#10094;</a>
+        <a class="next7" onclick="plusSlides7(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot7" onclick="currentSlide7(1)"></span>
+          <span class="dot7" onclick="currentSlide7(2)"></span>
+          <span class="dot7" onclick="currentSlide7(3)"></span>
+          <span class="dot7" onclick="currentSlide7(4)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides7(slideIndex);
+
+        // Next/previous controls
+        function plusSlides7(n) {
+          showSlides7((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide7(n) {
+          showSlides7((slideIndex = n));
+        }
+
+        function showSlides7(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides7");
+          var dots = document.getElementsByClassName("dot7");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active7", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active7";
+        }
+      </script>
+    </div>
+  </div>
+  <div class="row2">
+    <!-- Slideshow container1 -->
+    <div class="sec2">
+      <div class="slideshow-container4">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides4 fade4">
+          <div class="numbertext4">1 / 2</div>
+          <img src="CSS/image/minis.jpg" style="width: 100%" />
+          <div class="text4">MiniSword</div>
+        </div>
+
+        <div class="mySlides4 fade4">
+          <div class="numbertext4">2 / 2</div>
+          <img src="CSS/image/minis2.jpg" style="width: 100%" />
+          <div class="text4">MiniSword</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev4" onclick="plusSlides4(-1)">&#10094;</a>
+        <a class="next4" onclick="plusSlides4(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot4" onclick="currentSlide4(1)"></span>
+          <span class="dot4" onclick="currentSlide4(2)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides4(slideIndex);
+
+        // Next/previous controls
+        function plusSlides4(n) {
+          showSlides4((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide4(n) {
+          showSlides4((slideIndex = n));
+        }
+
+        function showSlides4(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides4");
+          var dots = document.getElementsByClassName("dot4");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active4", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active4";
+        }
+      </script>
+    </div>
+    <div class="sec2">
+      <div class="slideshow-container5">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides5 fade5">
+          <div class="numbertext5">1 / 2</div>
+          <img src="CSS/image/snowman1.jpg" style="width: 100%" />
+          <div class="text5">Clay Snowman</div>
+        </div>
+
+        <div class="mySlides5 fade5">
+          <div class="numbertext5">2 / 2</div>
+          <img src="CSS/image/snowman2.jpg" style="width: 100%" />
+          <div class="text5">Clay Snowman</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev5" onclick="plusSlides5(-1)">&#10094;</a>
+        <a class="next5" onclick="plusSlides5(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot5" onclick="currentSlide5(1)"></span>
+          <span class="dot5" onclick="currentSlide5(2)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides5(slideIndex);
+
+        // Next/previous controls
+        function plusSlides5(n) {
+          showSlides5((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide5(n) {
+          showSlides5((slideIndex = n));
+        }
+
+        function showSlides5(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides5");
+          var dots = document.getElementsByClassName("dot5");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active5", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active5";
+        }
+      </script>
+    </div>
+  </div>
+  <div class="row15">
+    <div class="sec15">
+      <div class="slideshow-container6">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides6 fade6">
+          <div class="numbertext6">1 / 2</div>
+          <img src="CSS/image/wallet101.png" style="width: 100%" />
+          <div class="text6">Wallet</div>
+        </div>
+
+        <div class="mySlides6 fade6">
+          <div class="numbertext6">2 / 2</div>
+          <img src="CSS/image/wallet102.jpg" style="width: 100%" />
+          <div class="text6">Wallet</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev6" onclick="plusSlides6(-1)">&#10094;</a>
+        <a class="next6" onclick="plusSlides6(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot6" onclick="currentSlide6(1)"></span>
+          <span class="dot6" onclick="currentSlide6(2)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- The dots/circles -->
+      <script>
+        var slideIndex = 1;
+        showSlides6(slideIndex);
+
+        // Next/previous controls
+        function plusSlides6(n) {
+          showSlides6((slideIndex += n));
+        }
+
+        // Thumbnail image controls
+        function currentSlide6(n) {
+          showSlides6((slideIndex = n));
+        }
+
+        function showSlides6(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides6");
+          var dots = document.getElementsByClassName("dot6");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active6", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active6";
+        }
+      </script>
+    </div>
+  </div>
+</body>
+
 </html>
